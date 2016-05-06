@@ -12,6 +12,9 @@ echo "### Pushing to Github..."
 git push origin master -f
 echo "### Done"
 echo "### update Source Code to Github"
+echo "### Pushing to rsync"
+/usr/local/bin/rsync  -vzrtopg --delete . rsync@444dish.com::data --password-file=/Users/Robin/Env/rsyncd.pwd
+echo "### Done"
 cd ..
 git add .
 git commit -a -m "update blog"
