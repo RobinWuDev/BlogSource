@@ -13,7 +13,7 @@ git push origin master -f
 echo "### Done"
 echo "### update Source Code to Github"
 echo "### Pushing to rsync"
-/usr/local/bin/rsync  -vzrtopg --delete . rsync@444dish.com::data --password-file=/Users/Robin/Env/rsyncd.pwd
+/usr/local/bin/rsync  -vzrtopg --delete --exclude-from=/root/exclude.list . rsync@444dish.com::data --password-file=/Users/Robin/Env/rsyncd.pwd
 echo "### Done"
 cd ..
 git add .
