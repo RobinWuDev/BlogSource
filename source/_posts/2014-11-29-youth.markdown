@@ -9,9 +9,9 @@ categories: 收藏
 
 <!--more-->
 
-##<center>YOUTH</center>
+## <center>YOUTH</center>
 
-###<center>Samuel Ullman</center>
+### <center>Samuel Ullman</center>
 
 **Youth is not a time of life; it is a state of mind; it is not a matter ofrosy cheeks, red lips and supple knees; it is a matter of the will, aquality of the imagination, a vigor of the emotions; it is the freshness of the deep springs of life.**
 
