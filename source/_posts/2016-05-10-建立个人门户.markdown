@@ -5,7 +5,6 @@ tags: 博客 hexo 域名 octopress
 comments: true
 categories: 其他
 ---
-### 个人门户
 什么叫做建立个人门户，就是建立一个网站，将自己的博客，还有作品集成在一起，也算是博客吧，不过我希望将域名也统一起来，都是通过*.robinwu.com这样的形式来连接。
 
 ### 博客迁移

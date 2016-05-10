@@ -23,3 +23,10 @@ git add .
 git commit -a -m "update blog"
 git push origin master
 echo "### Done"
+
+echo "### update theme"
+cd themes/maupassant
+git add .
+git commit -a -m "update theme"
+git push robinwu master
+echo "### Done"
