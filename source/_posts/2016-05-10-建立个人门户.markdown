@@ -1,0 +1,76 @@
+---
+title: 建立个人门户
+date: 2016-05-10 18:22:46
+tags: 博客 hexo 域名 octopress
+comments: true
+categories: 其他
+---
+### 个人门户
+什么叫做建立个人门户，就是建立一个网站，将自己的博客，还有作品集成在一起，也算是博客吧，不过我希望将域名也统一起来，都是通过*.robinwu.com这样的形式来连接。
+
+### 博客迁移
+因为我本来就有一个云服务器，用的是美团云的，这个服务器原来是用来放一个音乐网站和一个公众号的。现在我就把博客也放到这上面。
+
+### 使用rsync进行同步
+因为我已经将博客移植成hexo了，然后看官方文档发现了rsync这个同步工具。所以就在服务器上配置了rsync，然后修改我博客的发布脚本，这样就会自动将生成的博客文件上传到我的美团云服务器上。
+
+```
+#! /bin/bash
+hexo clean
+hexo generate
+echo "### Cp CNAME"
+cp CNAME public/CNAME
+echo "### Done"
+cd public
+
+git init
+git add .
+git commit -m "update at `date` "
+
+git remote add origin https://github.com/RobinWuDev/RobinWuDev.github.io.git >> /dev/null 2>&1
+echo "### Pushing to Github..."
+git push origin master -f
+echo "### Done"
+echo "### Pushing to rsync"
+/usr/local/bin/rsync  -vzrtopg --delete --exclude-from=../exclude.list . rsync@444dish.com::data --password-file=/Users/Robin/Env/rsyncd.pwd
+echo "### Done"
+echo "### update Source Code to Github"
+cd ..
+git add .
+git commit -a -m "update blog"
+git push origin master
+echo "### Done"
+```
+
+### 定制子域名
+博客: blog.robinwu.com
+音乐项目: music.robinwu.com
+主页:robinwu.com
+
+### 修改dnspod
+首先在dnspod上配置下域名，将music.robinwu.com和blog.robinwu.com指向我的美团云服务器。
+
+### 配置apache
+修改httpd.conf
+加入下面这些代码
+```
+<VirtualHost *:80>
+    # This first-listed virtual host is also the default for *:80
+    ServerName www.robinwu.com
+    ServerAlias blog.robinwu.com
+    DocumentRoot "/var/www/html/Blog"
+</VirtualHost>
+
+<VirtualHost *:80>
+    # This first-listed virtual host is also the default for *:80
+    ServerName music.robinwu.com
+    ServerAlias music.robinwu.com
+    DocumentRoot "/var/www/html/Jay"
+</VirtualHost>
+```
+
+这样线上部分就可以了。
+
+
+### 编辑器-Atom
+我原来一直都是用Mou进行写博客，后面改成了sublime text,但是还是不方面。后面就有想法要自己写一个，毕竟最近一年就是在做桌面应用，也比较有经验吧。后面我发现了Atom，整体的UI和体验还不错，而且有很多的插件，找了个hexo的插件，发现创建博客，生成都比较方面，而且可以直接执行脚本，那么我发布也比较发面了。所以也就没有打算再自己写一个了。
