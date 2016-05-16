@@ -1,6 +1,6 @@
 #! /bin/bash
-hexo clean
-hexo generate
+# hexo clean
+# hexo generate
 # echo "### Cp CNAME"
 # cp CNAME public/CNAME
 # echo "### Done"
