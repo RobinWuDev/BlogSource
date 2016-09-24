@@ -1,8 +1,8 @@
 ---
-title: Three.js参数设置
+title: Threejs参数设置
 date: 2016-09-24 16:09:10
 comments: true
-tags:three.js webgl 视频
+tags: threejs webgl 视频
 category: javascript
 ---
 由于公司项目，最近在是用Electron做视频会议室，所以就用到了webgl，而我选择了使用Three.js做为
