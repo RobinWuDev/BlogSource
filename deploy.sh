@@ -11,8 +11,8 @@ git add .
 git commit -m "update at `date` "
 
 git remote add origin https://github.com/RobinWuDev/RobinWuDev.github.io.git >> /dev/null 2>&1
-echo "### Pushing to Github..."
-git push origin master
+echo "### Pushing blog data to Github..."
+git push -f origin master
 echo "### Done"
 echo "### update Source Code to Github"
 cd ..
