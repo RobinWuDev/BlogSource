@@ -12,10 +12,7 @@ git commit -m "update at `date` "
 
 git remote add origin https://github.com/RobinWuDev/RobinWuDev.github.io.git >> /dev/null 2>&1
 echo "### Pushing to Github..."
-git push origin master -f
-echo "### Done"
-echo "### Pushing to rsync"
-/usr/local/bin/rsync  -vzrtopg --delete --exclude-from=../exclude.list . rsync@robinwu.com::data --password-file=/Users/Robin/Env/rsyncd.pwd
+git push origin master
 echo "### Done"
 echo "### update Source Code to Github"
 cd ..
