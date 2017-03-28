@@ -8,7 +8,7 @@ categories: 书单
 这是2015年的书单
 <!--more-->
 
-###技术
+### 技术
 
 1. [《C++ Primer（中文版 第5版）》](http://www.amazon.cn/gp/product/B00ESUIL0O/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00ESUIL0O&linkCode=as2&tag=robinwu-23)
 2. [《Core Data应用开发实践指南》](http://www.amazon.cn/gp/product/B00QGA0AGM/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00QGA0AGM&linkCode=as2&tag=robinwu-23)
@@ -26,18 +26,18 @@ categories: 书单
 14. [《Python编程(第4版)(套装共2册)》](http://www.amazon.cn/gp/product/B00R3UI2NC/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00R3UI2NC&linkCode=as2&tag=robinwu-23)
 15. [《移动开发经典丛书:iOS Auto Layout开发秘籍(第2版)》](http://www.amazon.cn/gp/product/B00R4AG4CW/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00R4AG4CW&linkCode=as2&tag=robinwu-23)
 
-###心理
+### 心理
 
 1. [《Marva Collins' Way: Updated》](http://www.amazon.cn/gp/product/0874775728/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=0874775728&linkCode=as2&tag=robinwu-23)
 2. [《我已经够好了:克服自卑!从“担心别人怎么想”到“勇敢做自己”》](http://www.amazon.cn/gp/product/B00Q3VD8D6/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00Q3VD8D6&linkCode=as2&tag=robinwu-23)
 3. [《怕什么?人生本来就不确定》](http://www.amazon.cn/gp/product/B00ODUR2D6/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00ODUR2D6&linkCode=as2&tag=robinwu-23)
 
-###时间管理
+### 时间管理
 
 1. [《你的时间有限,不要为别人而活》](http://www.amazon.cn/gp/product/B00NNDR8QA/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00NNDR8QA&linkCode=as2&tag=robinwu-23)
 2. [《把时间当作朋友(第3版)(全彩版) 》](http://www.amazon.cn/gp/product/B00FU3CRZI/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00FU3CRZI&linkCode=as2&tag=robinwu-23)
 
-###理财
+### 理财
 
 1. [《富爸爸穷爸爸》](http://www.amazon.cn/gp/product/B00H9XDUL2/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00H9XDUL2&linkCode=as2&tag=robinwu-23)
 2. [《富爸爸投资指南》](http://www.amazon.cn/gp/product/B00H9XEU52/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00H9XEU52&linkCode=as2&tag=robinwu-23)
@@ -62,8 +62,8 @@ categories: 书单
 1. [《万万没想到:用理工科思维理解世界》](http://www.amazon.cn/gp/product/B00NUAKQGA/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00NUAKQGA&linkCode=as2&tag=robinwu-23)
 2. [《时间简史(插图本) 》](http://www.amazon.cn/gp/product/B00116OR88/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00116OR88&linkCode=as2&tag=robinwu-23)
 
- 
-###文学
+
+### 文学
 
 1. [《三体(1-3)(套装共3册)》](http://www.amazon.cn/gp/product/B00OB3SNMY/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00OB3SNMY&linkCode=as2&tag=robinwu-23)
 2. [《一个人的朝圣》](http://www.amazon.cn/gp/product/B00EC7DOT6/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00EC7DOT6&linkCode=as2&tag=robinwu-23)
@@ -78,7 +78,7 @@ categories: 书单
 11. [《解忧杂货店》](http://www.amazon.cn/gp/product/B00JZ96ZI8/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00JZ96ZI8&linkCode=as2&tag=robinwu-23)
 12. [《比恐惧更强烈的情感 (马克·李维全集 2)》](http://www.amazon.cn/gp/product/B00MFHAMLI/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00MFHAMLI&linkCode=as2&tag=robinwu-23)
 
-###其他
+### 其他
 
 1. [《生而为赢 ▪ 新东方英语背诵美文30篇》](http://www.amazon.cn/gp/product/B004Q7LR8M/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B004Q7LR8M&linkCode=as2&tag=robinwu-23)
 2. [《说着英语去旅行:彩图旅游英语》](http://www.amazon.cn/gp/product/B00LA48ELC/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B00LA48ELC&linkCode=as2&tag=robinwu-23)

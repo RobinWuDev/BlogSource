@@ -9,11 +9,11 @@ categories: 其他
 
 所以就需要打补丁了，我们把在一个版本的修改作为一个补丁，然后在其他版本都执行一遍。
 
-###1. 获取修改信息
+### 1. 获取修改信息
 
 首先要给大家介绍`git`的一个命令:`git diff`，从命令上我们就能知道这是一个显示区别的命令。我们通过这个命令，可以将我们将我们的修改变成一个补丁，然后去其他的版本上。
 
-    
+
 1.git diff   
 
     这个命令没有加任何参数，所以显示出当前工作区与上一次提交的修改
@@ -62,10 +62,10 @@ RobinWu:diffDemo Robin$ git diff newBranch
 diff --git a/test2.txt b/test2.txt
 new file mode 100644
 index 0000000..e69de29
-RobinWu:diffDemo Robin$ 
+RobinWu:diffDemo Robin$
 ```
 
-###2. 制作补丁
+### 2. 制作补丁
 那么如果将这些改变制作成一个补丁呢？    
 我们可以通过`>`定向符来制作一个补丁    
 `git diff > my.patch`这个命令就会将修改信息保存到`my.patch`这个文件里。    
@@ -87,7 +87,7 @@ index b78f83c..4871fd5 100644
 ~         
 ```
 
-###3. 使用补丁
+### 3. 使用补丁
 补丁做好了，那么如何使用这些补丁呢？
 切换到对应的分支，然后执行`git apply my2.patch `就可以将修改应用到这个分支上了，但是请注意，这时候分支只是被修改了。    
 
@@ -108,11 +108,11 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 所以我还需要执行`git commit`才能将修改保存下来。    
 
-###4. 格式化修改信息
+### 4. 格式化修改信息
 
 `git format-patch -M `使用命令会将提交者的信息也保留下来，例如名字，邮箱地址等等。
 ```
-RobinWu:diffDemo Robin$ git format-patch -M b7500087ca324b4b2f6497dd4cfe37cdbe07c7c2 b726a2381c06833c831ddaa6fcc2bb8f5ed4a883 
+RobinWu:diffDemo Robin$ git format-patch -M b7500087ca324b4b2f6497dd4cfe37cdbe07c7c2 b726a2381c06833c831ddaa6fcc2bb8f5ed4a883
 RobinWu:diffDemo Robin$ ls
 0001-add-file.patch my.patch        my3.patch
 0002-change-txt.patch   my2.patch       test2.txt
@@ -145,7 +145,7 @@ index 0000000..4871fd5
 我们会发现补丁文件，包含了一些修改者的信息。这时我们合并过去，也可以将这些信息保留下来。
 
 ```
-RobinWu:diffDemo Robin$ git am ../0001-add-new-file.patch 
+RobinWu:diffDemo Robin$ git am ../0001-add-new-file.patch
 Applying: add new file
 RobinWu:diffDemo Robin$ git log
 commit 5d21a53e295bbe79399d7118bf8304d03a264948
@@ -159,7 +159,6 @@ Author: RobinWu <lostskydev@gmail.com>
 Date:   Wed Jun 24 23:15:51 2015 +0800
 
     add file
-RobinWu:diffDemo Robin$ 
+RobinWu:diffDemo Robin$
 ```
 我们需要使用`git am patchFile`命令来进行合并，不然这些提交信息就无法保存下来。
-
