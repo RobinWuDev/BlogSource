@@ -4,7 +4,7 @@ title: android studio的ndk子模块打断点配置
 date: 2017-05-25 21:44:44
 comments: true
 tags: android
-category:  android
+category: android
 ---
 最近在使用ndk，不过我是把ndk放在了一个子模块中，然后发现无法打断点，后来调查下，发现需要以下的配置。<!--more-->
 1.在子模块的build.gradle文件中，添加publishNonDefault  true
